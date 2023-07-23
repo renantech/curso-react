@@ -10,8 +10,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import Evento from './components/Evento';
 // import Form from './components/Form';
 // import Saudacao from './components/Saudacao';
-import About from './components/Pages/About';
 import './App.css';
+import Footer from './layout/Footer';
+import About from './components/Pages/About';
 
 function App() {
 
@@ -60,6 +61,8 @@ function App() {
           <Route path="/sobre" element={<About />} />
         </Routes>
       </Router>
+      
+      <Footer />
 
     </div>
   );
